@@ -1,0 +1,211 @@
+// run on current jenkins node 
+node {
+    ansiColor('xterm'){
+        stage('ansi') {
+            echo "\u001B[31mI'm Red\u001B[0m Now not"
+        }
+    }
+    
+    stage('create a build output'){
+            // create a dirtectory 'output'
+        sh  "mkdir -p output"
+            
+            // create a file which needs be archived
+        writeFile file:"output/usefulfile.txt", text:"This file is useful, need to archive it."
+            
+            // create a file which is not needed to be archieved
+        writeFile file:"output/uselessfile.md", text:"no need to archieve this file"
+    }
+        
+    stage('archive the build output') {
+        archiveArtifacts artifacts:"output/*.txt", excludes:"output/*.md"
+    }
+}	
+----------------------------------------------------------------
+## Java
+pipeline {
+    agent { docker 'maven:3.3.3' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+    }
+}
+---------------------------------------------------
+## Node/JavaScript
+pipeline {
+    agent { docker 'node:6.3' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'npm --version'
+            }
+        }
+    }
+}
+----------------------------------------------
+## Ruby
+pipeline {
+    agent { docker 'ruby' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'ruby --version'
+            }
+        }
+    }
+}
+-----------------------------------------------
+## Python
+Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent { docker 'python:3.5.1' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'python --version'
+            }
+        }
+    }
+}
+----------------------------------------
+## PHP
+pipeline {
+    agent { docker 'php' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'php --version'
+            }
+        }
+    }
+}
+--------------------------------------
+## use label to specify master node on which buld will be run 
+# Multiline step 
+pipeline {
+    agent {
+        label 'master'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "Hello World!"'
+                sh '''
+                  echo "Multiline steps work too"
+                  ls -lah
+                '''
+            }
+        }
+    }
+}
+-----------------------------
+## use label to specify win2012slave node on which buld will be run 
+# Multiline step 
+pipeline {
+    agent {
+        label 'win2012slave'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                bat "dir"
+            }
+        }
+    }
+}
+---------------------------------
+## after stage completed.. use post
+pipeline {
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+                sh 'echo "Fail!"; exit 1'
+            }
+        }
+    }
+    post {
+        always {
+            echo 'This will always run'
+        }
+        success {
+            echo 'This will run only if successful'
+        }
+        failure {
+            echo 'This will run only if failed'
+        }
+        unstable {
+            echo 'This will run only if the run was marked as unstable'
+        }
+        changed {
+            echo 'This will run only if the state of the Pipeline has changed'
+            echo 'For example, if the Pipeline was previously failing but is now successful'
+        }
+    }
+}
+-----------------------------------------
+## global environment variables.. ie for every stage
+pipeline {
+    agent any
+
+    environment {
+        DISABLE_AUTH = 'true'
+        DB_ENGINE    = 'sqlite'
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'printenv'
+            }
+        }
+    }
+}
+----------------------------------------------
+## use deleteDI=ir() to clean up workspace
+pipeline {
+    agent any
+    stages {
+        stage('No-op') {
+            steps {
+                sh 'ls'
+            }
+        }
+    }
+    post {
+        always {
+            echo 'One way or another, I have finished'
+            deleteDir() /* clean up our workspace */
+        }
+        success {
+            echo 'I succeeeded!'
+        }
+		failure {
+			mail to: 'team@example.com',
+				 subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+				 body: "Something is wrong with ${env.BUILD_URL}"
+		}
+}
+----------------------------------------------
+## parameters
+pipeline {
+    agent {
+        label 'master'
+    }
+    
+    parameters {
+        string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+    }
+    
+    stages {
+        stage('build') {
+            steps {
+                echo "Hello ${params.PERSON}"
+            }
+        }
+    }
+}
+-----------------------------------------------

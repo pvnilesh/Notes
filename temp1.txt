@@ -1,0 +1,30 @@
+
+winrs -r:http://35.224.82.75:5985/wsman -u:susanta_aec -p:pKW:Rgals]UAph/ ipconfig
+
+$secpasswd = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
+$mycreds = New-Object System.Management.Automation.PSCredential ("username", $secpasswd)
+
+Enter-PSSession -ComputerName 35.189.137.188 -Credential $mycreds
+
+puppet apply --modulepath ./modules manifests/site.pp
+
+https://github.com/pvnilesh/SampleProject.git
+
+C:\Program Files\Apache Software Foundation\tomcat\apache-tomcat-8.5.12\webapps
+
+copy x C:\Jenkins\tmp\
+
+
+35.224.82.75
+
+scp -i id_rsa  test.html susanta_aec@35.224.82.75:/cygdrive/c/Jenkins/tmp/
+
+scp -i /home/mykey/nilesh/id_rsa  SampleWebApp/target/*.war susanta_aec@35.224.82.75:/cygdrive/c/Jenkins/tmp/
+
+http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
+
+/opt/apache-maven/bin/mvn -B -DskipTests clean package
+
+scp -i /var/lib/jenkins/nileshfiles/id_rsa  /var/lib/jenkins/nileshfiles/testfile susanta_aec@35.224.82.75:/cygdrive/c/Jenkins/tmp/
+
+sshpass -p "pKW:Rgals]UAph/" scp -r /var/lib/jenkins/nileshfiles/testfile susanta_aec@35.224.82.75:/cygdrive/c/Jenkins/tmp/ 
