@@ -1,0 +1,140 @@
+{
+  "items" : [ {
+    "id" : "bWF2ZW4tc25hcHNob3RzOmQzNTEwYjdhZDE4ZDgyY2Q0MjFjMzg1MmI5NjE5NTMw",
+    "group" : "com.nilesh",
+    "name" : "SampleWebApp",
+    "version" : "0.0.1-20180123.142201-1",
+    "repository" : "maven-snapshots",
+    "format" : "maven2",
+    "assets" : [ {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.pom",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.pom",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDg4YTdhYTI0YjFmOGMxYjE5",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "aa40cef605a45f5add49e0eda835b02e74ee5957",
+        "md5" : "5eaf34bbbc51104a4fae0a3625a598d1"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.pom.md5",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.pom.md5",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDg1MGQ0M2ZlOGUzZTE0ZGY1",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "a0f4071ea056a4ded134707fe73d6ce2a17f6fce",
+        "md5" : "5bcde3e04ec183a35179f8a9605ba4b2"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.pom.sha1",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.pom.sha1",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDhmNmQ2OWY0MzFkZmMxODg1",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "24c145e4f975949093975085dc03f29d356bfef4",
+        "md5" : "8b29e2620f9fe175713b7f99a416f720"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.war",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.war",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDg1M2E3NzI5OGNlM2E4Mjc1",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "c7f5527621a455d9fdefe14410b5498d15859fa7",
+        "md5" : "d0ff7a6b61203259b1a37639a8c6bd3f"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.war.md5",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.war.md5",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDgzNTczNjhiNDNkNGRhM2Q4",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "09cb972597b2ebb31e67c3a06a677f574b10dfdf",
+        "md5" : "8454b3983f5a42450fc9df6e0da0e2f5"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.war.sha1",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142201-1.war.sha1",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDhlZjM1NmFhNGU5YjJmZTQ2",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "d28a35ee67e49341bd8430538995e00db2c08b87",
+        "md5" : "5fdb97ec2cd248f852cf8fa011810a8a"
+      }
+    } ]
+  }, {
+    "id" : "bWF2ZW4tc25hcHNob3RzOmQzNTEwYjdhZDE4ZDgyY2RlNTYzYTFlZTFhZjliMDBk",
+    "group" : "com.nilesh",
+    "name" : "SampleWebApp",
+    "version" : "0.0.1-20180123.142717-2",
+    "repository" : "maven-snapshots",
+    "format" : "maven2",
+    "assets" : [ {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.pom",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.pom",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDgwMmExM2Q5NjA4ZGE4ODdl",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "aa40cef605a45f5add49e0eda835b02e74ee5957",
+        "md5" : "5eaf34bbbc51104a4fae0a3625a598d1"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.pom.md5",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.pom.md5",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDg3ODQ4ZTFhZjIwYjI5YzYy",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "a0f4071ea056a4ded134707fe73d6ce2a17f6fce",
+        "md5" : "5bcde3e04ec183a35179f8a9605ba4b2"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.pom.sha1",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.pom.sha1",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDg1OTdhY2E3NzhjNDcxMDk2",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "24c145e4f975949093975085dc03f29d356bfef4",
+        "md5" : "8b29e2620f9fe175713b7f99a416f720"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.war",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.war",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDhkNWFmZGJlMWU2OTQyNjgw",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "49f1bc488d4306ab3fbc8a80eeeaf50fdd76dd65",
+        "md5" : "c1c8a5efc19673b0731f00b4360cf5d8"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.war.md5",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.war.md5",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDgyYzM3N2YwZTMwZTkyMDY0",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "b174722079f1fc55c567d802d219765566bd012a",
+        "md5" : "e368aa10c943604764b9ccb93892b72f"
+      }
+    }, {
+      "downloadUrl" : "http://35.201.168.32:8081/repository/maven-snapshots/com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.war.sha1",
+      "path" : "com/nilesh/SampleWebApp/0.0.1-SNAPSHOT/SampleWebApp-0.0.1-20180123.142717-2.war.sha1",
+      "id" : "bWF2ZW4tc25hcHNob3RzOmM3NzAxNjljMGIyZTNlZDg2NTY2YjZhZjFlNjVhM2Nl",
+      "repository" : "maven-snapshots",
+      "format" : "maven2",
+      "checksum" : {
+        "sha1" : "5c3fe60450086c87b946523f1e694c3ebb4a4794",
+        "md5" : "992fa04408f6831f11b9e8ff7c41095e"
+      }
+    } ]
+  } ],
+  "continuationToken" : null
+}
